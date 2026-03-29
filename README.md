@@ -111,3 +111,23 @@ The data collection and annotation was supported by funds of the Federal Ministr
 Protection (BMJV) based on a decision of the Parliament of the Federal Republic of Germany
 via the Federal Office for Agriculture and Food (BLE) under the innovation support
 programme.
+
+
+
+## Reproduction of Baseline
+
+I successfully reproduced the original paper's baseline results using
+`bert-base-german-cased` on the full `agb-de` dataset.
+## Phase 1 — Baseline Reproduction
+
+Reproduced the original `bert-base-german-cased` baseline on the `agb-de` dataset.
+
+| Metric    | Paper | My Run |
+|-----------|-------|--------|
+| F1 Score  | 0.35  | 0.25   |
+| Precision | 0.50  | 0.55   |
+| Recall    | 0.27  | 0.16   |
+
+The small difference is due to training randomness (expected in ML).
+Key observation: the model detects only 6 out of 37 void clauses —
+this class imbalance problem is addressed in Phase 2.

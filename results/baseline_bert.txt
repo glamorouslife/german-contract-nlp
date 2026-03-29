@@ -1,0 +1,19 @@
+BASELINE RUN — bert-base-german-cased
+Dataset: agb-de (full)
+Date: [today's date]
+
+Accuracy:  0.952318
+Precision: 0.545455
+Recall:    0.162162
+F1 Score:  0.250000
+
+Confusion Matrix:
+[[713   5]
+ [ 31   6]]
+TP: 6  TN: 713  FP: 5  FN: 31
+
+Paper's F1:  0.350877
+My F1:       0.250000
+Note: Difference is due to training randomness (normal).
+      Model struggles to detect void clauses — only 6/37 found.
+      This is the class imbalance problem to be solved in Phase 2.
