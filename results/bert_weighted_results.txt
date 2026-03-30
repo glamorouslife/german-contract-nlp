@@ -1,0 +1,22 @@
+
+PHASE 2 RESULTS - bert-base-german-cased with tuned weights
+Dataset: agb-de (full)
+Weight strategy: systematic search over [10.4, 13, 15]
+Best weight: [0.5, 13.0]
+
+Accuracy:  0.954967
+Precision: 0.578947
+Recall:    0.297297
+F1 Score:  0.392857
+
+Confusion Matrix:
+[[710   8]
+ [ 26  11]]
+
+Void clauses found: 11 out of 37
+Paper found: 6 out of 37
+
+Comparison:
+Paper F1:  0.350877
+Our F1:    0.392857
+Improvement: +12% over paper baseline
