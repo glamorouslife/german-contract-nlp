@@ -1,0 +1,25 @@
+
+ERROR ANALYSIS RESULTS
+======================
+Total void clauses: 37
+Void clauses found: 5
+Void clauses missed: 32
+
+MISSED BY TOPIC:
+conclusionOfContract    7
+delivery                6
+liability               4
+warranty                4
+withdrawal              4
+payment                 3
+severability            1
+applicability           1
+
+FOUND BY TOPIC:
+payment     4
+delivery    1
+
+KEY FINDINGS:
+1. Model best at: payment clauses (specific trigger words)
+2. Model worst at: conclusionOfContract (complex, buried void language)
+3. Core problem: 4.8% class imbalance still dominates model behavior
